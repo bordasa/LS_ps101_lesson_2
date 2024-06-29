@@ -1,0 +1,28 @@
+{
+    "ENG": {
+    "welcome": "Welcome to the Calculator!",
+    "question_1": "What is the first number?",
+    "question_2": "What is the second number?",
+    "question_3": "What operation would you like to perform?\n1: Add ( + )\n2: Subtract ( - )\n3: Multiply ( * )\n4: Divide ( / )",
+    "sorry": "Sorry, that does not look like a valid number.",
+    "result": "The result is: {}.",
+    "correct_choices_1": "Please input 1, 2, 3, or 4",
+    "restart": "Would you like to do a new calculation?\n1: Yes\n2: No (Quit)",
+    "thank_you": "Thank you for using calculator.py\n==> Have a nice day.",
+    "correct_choices_2": "Please input 1 or 2",
+    "press_any_key": "Press ENTER to continue."
+    },
+    "SPA": {
+    "welcome": "Bienvenido a la calculadora!",
+    "question_1": "¿Cual es el primero numero?",
+    "question_2": "¿Cual es el segundo numero?",
+    "question_3": "¿Cual de estas operaciones te gustaria hacer? \n1: Sumar ( + )\n2: Restar ( - )\n3: Multiplicar ( * )\n4: Dividir ( / )",
+    "sorry": "Lo siento, ese no parece un numero valido.",
+    "result": "El resultado es: {}.",
+    "correct_choices_1": "Por favor, utilice los numeros 1, 2, 3, o 4",
+    "restart": "¿Le gustaría hacer un nuevo cálculo?\n1: Sí\n2: No (Salir)",
+    "thank_you": "Gracias por utilizar el calculadora.\n==> Que tenga un lindo dia.",
+    "correct_choices_2": "Por favor, utilice los numeros 1 o 2",
+    "press_any_key": "Presione ENTRAR para continuar."
+    }
+}
