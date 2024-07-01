@@ -8,7 +8,7 @@ def draw_line():
 def invalid_number(number_str):
     try:
         number = float(number_str)
-        if number <= 0:
+        if number < 0:
             draw_line()
             prompt('Error: value must be greater than 0.')
             draw_line()
@@ -17,7 +17,7 @@ def invalid_number(number_str):
         return True
 
     return False
-    
+
 # Welcome to the app
 draw_line()
 prompt('Welcome to the Mortgage Calculator')
@@ -64,7 +64,8 @@ duration_months = float(duration_years) * 12
 if apr == 0:
     payment_monthly = float(loan_amount) / duration_months
 else:
-    payment_monthly = float(loan_amount) * (interest_monthly / (1 - (1 + interest_monthly) ** (-duration_months)))
+    payment_monthly = float(loan_amount) * (interest_monthly /
+                    (1 - (1 + interest_monthly) ** (-duration_months)))
 
 
 payment_monthly = round(payment_monthly, 2)
