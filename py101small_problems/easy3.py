@@ -127,38 +127,52 @@
 ###########################################
 # Clean up the words
 
-#def clean_up(string):
+def clean_up(string):
+
+    new_string = ''
+
+    for index, element in enumerate(string):
+        if element.isalpha():
+            new_string += element
+        
+        else:
+            if index == 0 or string[index - 1].isalpha():
+                new_string += ' '
+    
+    return new_string
+
+print(clean_up("---what's my +*& line?") == " what s my line ")
 
 ##############################################
 
 # What Century is That?
 
-def century(year):
-    hundreds = year // 100
-    tens = year % 100
+# def century(year):
+#     hundreds = year // 100
+#     tens = year % 100
     
-    if tens > 0:
-        hundreds += 1
+#     if tens > 0:
+#         hundreds += 1
     
-    cent = str(hundreds)
+#     cent = str(hundreds)
 
-    if cent[-1] == '1' and hundreds % 100 != 11:
-        cent += 'st'
-    elif cent[-1] == '2' and hundreds % 100 != 12:
-        cent += 'nd'
-    elif cent[-1] == '3' and hundreds % 100 != 13:
-        cent += 'rd'
-    else:
-        cent += 'th'
+#     if cent[-1] == '1' and hundreds % 100 != 11:
+#         cent += 'st'
+#     elif cent[-1] == '2' and hundreds % 100 != 12:
+#         cent += 'nd'
+#     elif cent[-1] == '3' and hundreds % 100 != 13:
+#         cent += 'rd'
+#     else:
+#         cent += 'th'
     
-    return cent
+#     return cent
 
-print(century(2000) == '20th')
-print(century(2001) == '21st')
-print(century(1965) == '20th')
-print(century(256) == '3rd')
-print(century(5) == '1st')
-print(century(10103) == '102nd')
-print(century(1052) == '11th')
-print(century(1127) == '12th')
-print(century(11201) == '113th')
+# print(century(2000) == '20th')
+# print(century(2001) == '21st')
+# print(century(1965) == '20th')
+# print(century(256) == '3rd')
+# print(century(5) == '1st')
+# print(century(10103) == '102nd')
+# print(century(1052) == '11th')
+# print(century(1127) == '12th')
+# print(century(11201) == '113th')
