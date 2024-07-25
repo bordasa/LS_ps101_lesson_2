@@ -43,7 +43,7 @@
 # The End Is Near But Not Here
 
 # def penultimate(string):
-#     word_list = string.split(' ')
+#     word_list = string.split(' ')  ## didn't need the ' ' bc default is to split on spaces
 #     return word_list[-2]
 
 # # These examples should pring True
